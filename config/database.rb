@@ -2,7 +2,7 @@ configure :test do
   set :database, {
     adapter:  'postgresql',
     encoding: 'utf8',
-    database: 'onebitbot_test',
+    database: 'bitchatbot_test',
     pool: 5,
     username: 'postgres',
     host:     'postgres'
@@ -13,7 +13,7 @@ configure :development do
   set :database, {
     adapter:  'postgresql',
     encoding: 'utf8',
-    database: 'onebitbot_development',
+    database: 'bitchatbot_development',
     pool: 5,
     username: 'postgres',
     host:     'postgres'
