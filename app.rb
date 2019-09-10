@@ -15,21 +15,19 @@ class App < Sinatra::Base
   end
 
   post '/webhook' do
-p "### request.body"
-p request.body
     request.body.rewind
-    #result = JSON.parse(request.body.read)['queryResult']
-
-p "### request.body.read - after rewind"
-p request.body.read
-    result = JSON.parse(request.body.read)
+    result = JSON.parse(request.body.read)['queryResult']
 
     if result['contexts'].present?
+p "### tem a chave 'contexts'"
       response = InterpretService.perform(result['action'], result['contexts'][0]['parameters'])
     else
+p "### NÃO tem a chave 'contexts'"
       response = InterpretService.perform(result['action'], result['parameters'])
     end
 
+p "### response"
+p response
     content_type :json, charset: 'utf-8'
     {
       'payload': {
