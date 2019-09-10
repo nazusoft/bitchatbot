@@ -19,17 +19,15 @@ module FaqModule
         faqs = Faq.all
       end
 
-      response = '*Perguntas e Respostas* \n\n'
+      response = '<b>Perguntas e Respostas</b> </br></br>'
       faqs.each do |f|
-        response += "*#{f.id}* - "
-        response += "*#{f.question}*\n"
-        response += "`#{f.answer}` \n"
+        response += "<b>id:#{f.id}</b></br>"
+        response += "P: <b>#{f.question}</b></br>"
+        response += "R: #{f.answer}</br></br>"
 
-        f.hashtags.each do |h|
-          response += "_##{h.name}_ "
-        end
+        response += f.hashtags.map{|x| x.prepend('#') }.join(', ')
 
-        response += "\n\n"
+        response += "</br></br>"
       end
 
       (faqs.count > 0)? response : 'Nada encontrado'
