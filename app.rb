@@ -19,10 +19,8 @@ class App < Sinatra::Base
     result = JSON.parse(request.body.read)['queryResult']
 
     if result['contexts'].present?
-p "### tem a chave 'contexts'"
       response = InterpretService.perform(result['action'], result['contexts'][0]['parameters'])
     else
-p "### NÃO tem a chave 'contexts'"
       response = InterpretService.perform(result['action'], result['parameters'])
     end
 
@@ -30,6 +28,7 @@ p "### response"
 p response
     content_type :json, charset: 'utf-8'
     {
+      'fulfillmentText': response,
       'payload': {
         'telegram': {
           'text':       response,
