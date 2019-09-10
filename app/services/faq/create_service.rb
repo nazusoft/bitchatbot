@@ -2,9 +2,9 @@ module FaqModule
   class CreateService
 
     def initialize(params)
-      @question = params[:question]
-      @answer   = params[:answer]
-      @hashtags = params[:hashtags]
+      @question = params['question']
+      @answer   = params['answer']
+      @hashtags = params['hashtags']
     end
 
     def perform
