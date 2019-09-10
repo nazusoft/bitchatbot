@@ -3,7 +3,7 @@ module FaqModule
 
     def initialize(params, action)
       @action = action
-      @query  = params[:query]
+      @query  = params['query']
     end
 
     def perform

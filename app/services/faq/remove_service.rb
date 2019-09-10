@@ -3,7 +3,7 @@ module FaqModule
 
     def initialize(params)
       @params = params
-      @id     = params[:id]
+      @id     = params['id']
     end
 
     def perform
