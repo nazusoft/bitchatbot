@@ -15,8 +15,13 @@ class App < Sinatra::Base
   end
 
   post '/webhook' do
+p "### request.body"
+p request.body
     request.body.rewind
     #result = JSON.parse(request.body.read)['queryResult']
+
+p "### request.body.read - after rewind"
+p request.body.read
     result = JSON.parse(request.body.read)
 
     if result['contexts'].present?
