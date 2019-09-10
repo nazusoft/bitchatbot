@@ -30,7 +30,8 @@ class App < Sinatra::Base
       'source': 'https://nazusoft-bitchatbot.herokuapp.com',
       'payload': {
         'telegram': {
-          'text': response
+          'text': response,
+          'parse_mode': 'Markdown'
         }
       }
     }.to_json
