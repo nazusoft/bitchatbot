@@ -26,9 +26,7 @@ class App < Sinatra::Base
 
     content_type :json, charset: 'utf-8'
     {
-      'userNotification': {
-        'text': response
-      }
+      'fulfillmentText': response
     }.to_json
   end
 
