@@ -7,7 +7,6 @@ module FaqModule
     end
 
     def perform
-p "### @action = #{@action} - @query = #{@query}"
       if @action == 'search'
         faqs = Faq.search(@query)
       elsif @action == 'search_by_hashtag'
