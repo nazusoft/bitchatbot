@@ -2,25 +2,25 @@ class HelpService
 
   # quando utiliza 'self' antes do nome do método, não precisa utilizar 'new'
   def self.perform
-    response  = '<b>Meus comandos</b></br></br>'
+    response  = '**Meus comandos**\n\n'
 
-    response += '- help</br>'
-    response += '<i>Lista de comandos.</i></br></br>'
+    response += '- help\n'
+    response += '__Lista de comandos que eu conheço__\n\n'
 
-    response += '- Adicione ao Faq</br>'
-    response += '<i>Adiciona uma nova questão ao Faq.</i></br></br>'
+    response += '- Adicione ao Faq\n'
+    response += '__Adiciona uma nova questão ao Faq__\n\n'
 
-    response += '- Remova ID</br>'
-    response += '<i>Remove uma questão baseada no ID.</i></br></br>'
+    response += '- Remover ID\n'
+    response += '__Remove uma questão baseada no ID dela__\n\n'
 
-    response += '- O que você sabe sobre X</br>'
-    response += '<i>Pesquisa por palavra na lista de perguntas e respostas</i></br></br></br>'
+    response += '- O que você sabe sobre X\n'
+    response += '__Pesquisa por palavra na lista de perguntas e respostas__\n\n'
 
-    response += '- Pesquise a hashtag X</br>'
-    response += '<i>Lista as perguntas e respostas com aquela hashtag</i></br></br>'
+    response += '- Pesquise a hashtag X\n'
+    response += '__Lista as perguntas e respostas com aquela hashtag__\n\n'
 
-    response += '- Perguntas e Respostas</br>'
-    response += '<i>Mostra a lista de perguntas e respostas</i></br></br>'
+    response += '- Perguntas e Respostas\n'
+    response += '__Mostra a lista de perguntas e respostas__\n\n'
 
     response
   end
