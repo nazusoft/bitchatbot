@@ -2,25 +2,25 @@ class HelpService
 
   # quando utiliza 'self' antes do nome do método, não precisa utilizar 'new'
   def self.perform
-    response  = '*Meus comandos*    '
+    response  = '*Meus comandos*</br></br>'
 
-    response += '- help  '
-    response += '__Lista de comandos que eu conheço__    '
+    response += '- help</br></br>'
+    response += '__Lista de comandos que eu conheço__</br></br>'
 
-    response += '- Adicione ao Faq  '
-    response += '__Adiciona uma nova questão ao Faq__    '
+    response += '- Adicione ao Faq</br>'
+    response += '__Adiciona uma nova questão ao Faq__</br></br>'
 
-    response += '- Remover ID  '
-    response += '__Remove uma questão baseada no ID dela__    '
+    response += '- Remover ID</br>'
+    response += '__Remove uma questão baseada no ID dela__</br></br>'
 
-    response += '- O que você sabe sobre X  '
-    response += '__Pesquisa por palavra na lista de perguntas e respostas__    '
+    response += '- O que você sabe sobre X</br>'
+    response += '__Pesquisa por palavra na lista de perguntas e respostas__</br></br>'
 
-    response += '- Pesquise a hashtag X  '
-    response += '__Lista as perguntas e respostas com aquela hashtag__    '
+    response += '- Pesquise a hashtag X</br>'
+    response += '__Lista as perguntas e respostas com aquela hashtag__</br></br>'
 
-    response += '- Perguntas e Respostas  '
-    response += '__Mostra a lista de perguntas e respostas__    '
+    response += '- Perguntas e Respostas</br>'
+    response += '__Mostra a lista de perguntas e respostas__</br></br>'
 
     response
   end
