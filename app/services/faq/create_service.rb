@@ -8,7 +8,6 @@ module FaqModule
     end
 
     def perform
-p "q: #{@question} - a: #{@answer} - h: #{@hashtags}"
       return 'Hashtag é obrigatório' if @hashtags.nil?
 
       Faq.transaction do
