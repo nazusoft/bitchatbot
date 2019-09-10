@@ -29,7 +29,10 @@ class App < Sinatra::Base
       'fulfillmentMessages': [
         {
           'payload': {
-            'telegram': { 'text': response }
+            'telegram': {
+              'text': response,
+              'parse_mode': 'Markdown'
+            }
           }
         }
       ]
