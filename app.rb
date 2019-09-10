@@ -18,6 +18,9 @@ class App < Sinatra::Base
     request.body.rewind
     result = JSON.parse(request.body.read)['queryResult']
 
+p "### result"
+p result
+
     if result['contexts'].present?
       response = InterpretService.perform(result['action'], result['contexts'][0]['parameters'])
     else
