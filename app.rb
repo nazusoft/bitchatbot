@@ -26,7 +26,18 @@ class App < Sinatra::Base
 
     content_type :json, charset: 'utf-8'
     {
-      'fulfillmentText': response
+      'fulfillmentText': response,
+      'fulfillmentMessages': [
+        {
+          'text': [ response ]
+        }
+      ],
+      'source': 'https://nazusoft-bitchatbot.herokuapp.com',
+      'payload': {
+        'telegram': {
+          'text': response
+        }
+      }
     }.to_json
   end
 
