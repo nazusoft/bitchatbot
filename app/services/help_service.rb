@@ -5,22 +5,22 @@ class HelpService
     response  = 
       '<b>Comandos:</b></br></br>
 
-      - help</br>
+      <code>help</code>
       <i>Lista de comandos que eu conheço</i></br></br>
 
-      - Adicione ao Faq</br>
+      <code>Adicione ao Faq</code>
       <i>Adiciona uma nova questão ao Faq</i></br></br>
 
-      - Remover ID</br>
+      <code>Remover ID</code>
       <i>Remove uma questão baseada no ID dela</i></br></br>
 
-      - O que você sabe sobre X</br>
+      <code>O que você sabe sobre X</code>
       <i>Pesquisa por palavra na lista de perguntas e respostas</i></br></br>
 
-      - Pesquise a hashtag X</br>
+      <code>Pesquise a hashtag X</code>
       <i>Lista as perguntas e respostas com aquela hashtag</i></br></br>
 
-      - Perguntas e Respostas</br>
+      <code>Perguntas e Respostas</code>
       <i>Mostra a lista de perguntas e respostas</i></br></br>'
 
     response
