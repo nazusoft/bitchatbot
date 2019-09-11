@@ -25,7 +25,7 @@ module FaqModule
           P: #{f.question}
           R: #{f.answer}
 
-          hastags: #{f.hashtags.map{|x| x.prepend('#') }.join(', ')}
+          hastags: #{f.hashtags.map{|x| x.nome.prepend('#') }.join(', ')}
         EOF
 
         response
