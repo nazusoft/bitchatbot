@@ -21,18 +21,17 @@ module FaqModule
 
       per_res = faqs.map do |f|
         response = <<~EOF
-          <b>id:#{f.id}"
+          <b>id:#{f.id}</b>
           P: #{f.question}
           R: #{f.answer}
-
-          hastags: #{f.hashtags.map{|x| x.name.prepend('#') }.join(', ')}
+          hashtags: #{f.hashtags.map{|x| x.name.prepend('#') }.join(', ')}
         EOF
 
         response
       end
 
       response = <<~EOF
-        <b>### Perguntas e Respostas ###</b>'
+        <b>### Perguntas e Respostas ###</b>
 
         #{per_res}
       EOF
