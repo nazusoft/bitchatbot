@@ -2,8 +2,8 @@ class HelpService
 
   # quando utiliza 'self' antes do nome do método, não precisa utilizar 'new'
   def self.perform
-    response  = 
-      '<b>Comandos:</b>
+    response  = <<~EOF
+      <b>Comandos:</b>
 
       <code>help</code>
       <i>Lista de comandos que eu conheço</i>
@@ -21,7 +21,8 @@ class HelpService
       <i>Lista as perguntas e respostas com aquela hashtag</i>
 
       <code>Perguntas e Respostas</code>
-      <i>Mostra a lista de perguntas e respostas</i>'
+      <i>Mostra a lista de perguntas e respostas</i>
+      EOF
 
     response
   end
