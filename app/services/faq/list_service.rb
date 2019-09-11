@@ -20,11 +20,12 @@ module FaqModule
       end
 
       per_res = ''; faqs.each do |f|
-        per_res = <<~EOF
+        per_res <<~EOF
           <b>id:#{f.id}</b>
           P: #{f.question}
           R: #{f.answer}
           hashtags: #{f.hashtags.map{|x| x.name.prepend('#') }.join(', ')}
+
         EOF
       end
 
