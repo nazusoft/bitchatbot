@@ -5,22 +5,22 @@ class HelpService
     response  = <<~EOF
       <b>### Comandos ###</b>
 
-      <b><code>help</code></b>
+      <code>help</code>
       <i>Lista de comandos que eu conheço</i>
 
-      <b><code>Adicione ao Faq</code></b>
+      <code>Adicione ao Faq</code>
       <i>Adiciona uma nova questão ao Faq</i>
 
-      <b><code>Remover ID</code></b>
+      <code>Remover ID</code>
       <i>Remove uma questão baseada no ID dela</i>
 
-      <b><code>O que você sabe sobre X</code></b>
+      <code>O que você sabe sobre X</code>
       <i>Pesquisa por palavra na lista de perguntas e respostas</i>
 
-      <b><code>Pesquise a hashtag X</code></b>
+      <code>Pesquise a hashtag X</code>
       <i>Lista as perguntas e respostas com aquela hashtag</i>
 
-      <b><code>Perguntas e Respostas</code></b>
+      <code>Perguntas e Respostas</code>
       <i>Mostra a lista de perguntas e respostas</i>
       EOF
 
