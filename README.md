@@ -1,6 +1,6 @@
 ### BIT CHATBOT ###
 
-App Open Source Bit ChatBot
+App Bit ChatBot - Pequeno robô de conversação
 
 ## Ferramentas utilizadas:
 
